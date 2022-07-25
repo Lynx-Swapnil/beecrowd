@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main ()
+{
+    int r;
+    double p = 3.14159,v;
+    scanf("%d",&r);
+    v=(4*p*r*r*r)/3;
+    printf("VOLUME = %.3lf\n",v);
+    return 0;
+}
