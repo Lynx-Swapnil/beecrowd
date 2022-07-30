@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+    int x,y;
+    scanf("%d %d",&x,&y);
+    printf("%.3lf\n",(x*y)/12.00);
+    return 0;
+}
