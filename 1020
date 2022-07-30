@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main ()
+{
+    long long x;
+    int n1,n2,n3,n4,n5,n6,n7;
+    scanf("%lld",&x);
+
+    n1=x/365;
+    n2=(x%365)/30;
+    n3=((x%365)%30);
+    printf("%d ano(s)\n"
+           "%d mes(es)\n"
+           "%d dia(s)\n",n1,n2,n3);
+    return 0;
+}
