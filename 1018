@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main ()
+{
+    long long x;
+    int n1,n2,n3,n4,n5,n6,n7;
+    scanf("%lld",&x);
+
+     n1=x/100;
+    n2=(x%100)/50;
+    n3=((x%100)%50)/20;
+    n4=(((x%100)%50)%20)/10;
+    n5=((((x%100)%50)%20)%10)/5;
+    n6=(((((x%100)%50)%20)%10)%5)/2;
+    n7=((((((x%100)%50)%20)%10)%5)%2)/1;
+
+    printf("%lld\n"
+           "%d nota(s) de R$ 100,00\n"
+           "%d nota(s) de R$ 50,00\n"
+           "%d nota(s) de R$ 20,00\n"
+           "%d nota(s) de R$ 10,00\n"
+           "%d nota(s) de R$ 5,00\n"
+           "%d nota(s) de R$ 2,00\n"
+           "%d nota(s) de R$ 1,00\n",x,n1,n2,n3,n4,n5,n6,n7);
+    return 0;
+}
