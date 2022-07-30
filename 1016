@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+    int y;
+    scanf("%d",&y);
+    printf("%d minutos\n",(2*y));
+    return 0;
+}
