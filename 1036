@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double a,b,c,x,y,k;
+    scanf("%lf%lf%lf", &a,&b,&c);
+    k = (b*b) - (4*(a*c));
+
+    if(k > 0 && a != 0)
+    {
+        k = sqrt(k);
+        x = (-b + k)/(2*a);
+        y = (-b - k)/(2*a);
+        printf("R1 = %.5lf\n", x);
+        printf("R2 = %.5lf\n", y);
+    }
+    else
+    {
+        printf("Impossivel calcular\n");
+    }
+
+    return 0;
+}
